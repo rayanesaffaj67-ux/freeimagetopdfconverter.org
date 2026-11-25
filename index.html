@@ -13,6 +13,7 @@
   <meta name="author" content="Free Image to PDF Converter">
 
   <link rel="canonical" href="https://freeimagetopdfconverter.org/">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Free Image to PDF Converter - JPG, PNG & WEBP Online">
@@ -24,7 +25,7 @@
   <meta name="twitter:title" content="Free Image to PDF Converter">
   <meta name="twitter:description" content="Convert JPG, PNG and WEBP images to PDF online for free. Fast, private and easy to use.">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8742930578659600"
@@ -48,19 +49,11 @@
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Any",
     "browserRequirements": "Requires a modern web browser with JavaScript enabled",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
+    "offers": {"@type": "Offer","price": "0","priceCurrency": "USD"},
     "featureList": [
-      "Convert JPG to PDF",
-      "Convert PNG to PDF",
-      "Convert WEBP to PDF",
-      "Combine multiple images into one PDF",
-      "Reorder images before conversion",
-      "Choose A4 or US Letter page size",
-      "Choose portrait or landscape orientation",
+      "Convert JPG to PDF","Convert PNG to PDF","Convert WEBP to PDF",
+      "Combine multiple images into one PDF","Reorder images before conversion",
+      "Choose A4 or US Letter page size","Choose portrait or landscape orientation",
       "Process images locally in the browser"
     ]
   }
@@ -71,62 +64,13 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is this image to PDF converter free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The image to PDF converter is free to use. There is no sign-up, no watermark and no payment required."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I convert JPG to PDF online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. You can convert JPG images to PDF online by selecting your JPG files and clicking Convert to PDF."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I convert PNG to PDF?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. PNG images are supported. Select one or multiple PNG files and convert them into a PDF document."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I convert WEBP images to PDF?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. You can select WEBP images and convert them into a PDF file using this online converter."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are my images uploaded to a server?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. The conversion runs in your browser, so your images stay on your device and are not uploaded to our server."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I combine multiple images into one PDF?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. You can add multiple JPG, PNG and WEBP images, change their order and combine them into one PDF file."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does the image to PDF converter work on mobile?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. It works in modern mobile browsers on iPhone and Android, as well as on Windows, Mac and Linux."
-        }
-      }
+      {"@type": "Question","name": "Is this image to PDF converter free?","acceptedAnswer": {"@type": "Answer","text": "Yes. The image to PDF converter is free to use. There is no sign-up, no watermark and no payment required."}},
+      {"@type": "Question","name": "Can I convert JPG to PDF online?","acceptedAnswer": {"@type": "Answer","text": "Yes. Select your JPG or JPEG images, arrange them if needed and click Convert to PDF to download your PDF file."}},
+      {"@type": "Question","name": "Can I convert PNG to PDF?","acceptedAnswer": {"@type": "Answer","text": "Yes. PNG images are supported. You can convert one PNG image or combine multiple PNG images into one PDF."}},
+      {"@type": "Question","name": "Can I convert WEBP images to PDF?","acceptedAnswer": {"@type": "Answer","text": "Yes. Select your WEBP images and convert them into a PDF document directly in your browser."}},
+      {"@type": "Question","name": "Are my images uploaded to a server?","acceptedAnswer": {"@type": "Answer","text": "No. The conversion runs in your browser, so your images stay on your device and are not uploaded to our server."}},
+      {"@type": "Question","name": "Can I combine multiple images into one PDF?","acceptedAnswer": {"@type": "Answer","text": "Yes. Add multiple JPG, PNG and WEBP images, change their order and combine them into one PDF file, with one image per page."}},
+      {"@type": "Question","name": "Does the image to PDF converter work on mobile?","acceptedAnswer": {"@type": "Answer","text": "Yes. It works in modern mobile browsers on iPhone and Android, as well as on Windows, Mac and Linux computers."}}
     ]
   }
   </script>
@@ -153,7 +97,7 @@
     .drop h2{font-size:18px;margin:0 0 7px}.drop p{font-size:13px;color:var(--muted);margin:0 0 18px}
     button,.file-label{border:0;border-radius:10px;padding:12px 18px;font-size:14px;font-weight:700;cursor:pointer;transition:.15s;display:inline-block}
     .primary{background:var(--blue);color:#fff}.primary:hover{background:#244bd7}
-    .secondary{background:#eef2ff;color:#294fdb}.small{padding:7px 10px;font-size:12px;border:1px solid var(--line);background:#fff;color:#42506a}
+    .small{padding:7px 10px;font-size:12px;border:1px solid var(--line);background:#fff;color:#42506a}
     input[type=file]{display:none}
     .settings{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
     .setting{flex:1;min-width:160px}.setting label{display:block;font-size:12px;font-weight:700;color:#536079;margin-bottom:7px}
@@ -183,11 +127,24 @@
     .tool-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
     .tool-links a{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 16px;text-decoration:none;font-weight:700;font-size:14px}
     .tool-links a:hover{border-color:var(--blue)}
+    .table-wrap{overflow-x:auto}
+    table{border-collapse:collapse;width:100%;background:#fff;font-size:15px}
+    th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+    th{background:#eef2ff}
+    .guides,.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
+    .guide{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink)}
+    .guide:hover{border-color:var(--blue)}
+    .guide b{display:block;font-size:15px;margin-bottom:6px}.guide span{font-size:13px;color:var(--muted);line-height:1.5}
+    .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center}
+    .step svg{width:72px;height:72px;margin-bottom:8px}
+    .step b{display:block;font-size:15px;margin-bottom:4px}.step span{font-size:13px;color:var(--muted);line-height:1.5}
+    .about-box{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:16px 18px;margin-top:28px}
+    .about-box p{margin:0;font-size:15px}
 
     footer{text-align:center;padding:25px 15px;margin-top:40px;border-top:1px solid #ddd;font-family:Arial,sans-serif;color:var(--muted);font-size:13px;background:#fff}
     footer a{color:var(--blue);text-decoration:none;margin:0 6px}
     footer a:hover{text-decoration:underline}
-    @media(max-width:600px){main{margin:35px auto 45px}.panel{padding:16px}.drop{padding:30px 12px}.features{grid-template-columns:1fr}.convert-row{flex-direction:column}.convert-row button{width:100%}.hint{display:none}.nav-links{gap:12px}}
+    @media(max-width:700px){main{margin:35px auto 45px}.panel{padding:16px}.drop{padding:30px 12px}.features,.guides,.steps{grid-template-columns:1fr}.convert-row{flex-direction:column}.convert-row button{width:100%}.hint{display:none}.nav-links{gap:12px}}
   </style>
 </head>
 <body>
@@ -198,6 +155,7 @@
     <nav class="nav-links" aria-label="Main">
       <a href="/jpg-to-pdf">JPG to PDF</a>
       <a href="/png-to-pdf">PNG to PDF</a>
+      <a href="/blog">Blog</a>
       <a href="/about">About</a>
       <a href="/contact">Contact</a>
       <span class="free">100% Free</span>
@@ -265,8 +223,23 @@
 
     <h2>Free Online Image to PDF Converter</h2>
     <p>Looking for a simple way to convert images to PDF online? Our free image to PDF converter lets you turn JPG, JPEG, PNG and WEBP images into a single PDF document directly from your browser. You can convert photos to PDF, change the order of your images, select a page size and download your finished PDF file in seconds.</p>
-
     <p>Whether you need to convert pictures to PDF for school, work, documents or personal use, this online PDF converter makes the process quick and simple. No account, registration, software installation or watermark is required.</p>
+
+    <h2>How It Works in 3 Steps</h2>
+    <div class="steps">
+      <div class="step">
+        <svg viewBox="0 0 72 72" role="img" aria-label="Add images"><rect x="10" y="14" width="52" height="44" rx="8" fill="#edf2ff" stroke="#315efb" stroke-width="3"/><circle cx="26" cy="30" r="5" fill="#315efb"/><path d="M14 54l16-16 10 10 8-8 14 14" fill="none" stroke="#315efb" stroke-width="3" stroke-linejoin="round"/></svg>
+        <b>1. Add your images</b><span>Choose JPG, PNG or WEBP files from your phone or computer.</span>
+      </div>
+      <div class="step">
+        <svg viewBox="0 0 72 72" role="img" aria-label="Arrange pages"><rect x="12" y="10" width="48" height="14" rx="4" fill="#edf2ff" stroke="#315efb" stroke-width="3"/><rect x="12" y="29" width="48" height="14" rx="4" fill="#edf2ff" stroke="#315efb" stroke-width="3"/><rect x="12" y="48" width="48" height="14" rx="4" fill="#edf2ff" stroke="#315efb" stroke-width="3"/><path d="M52 17v0M52 36v0M52 55v0" stroke="#315efb" stroke-width="4" stroke-linecap="round"/></svg>
+        <b>2. Arrange and choose size</b><span>Reorder pages with the arrows and pick A4, Letter or Fit to image.</span>
+      </div>
+      <div class="step">
+        <svg viewBox="0 0 72 72" role="img" aria-label="Download PDF"><path d="M20 8h24l12 12v44H20z" fill="#edf2ff" stroke="#315efb" stroke-width="3" stroke-linejoin="round"/><path d="M44 8v12h12" fill="none" stroke="#315efb" stroke-width="3"/><path d="M36 30v18m0 0l-8-8m8 8l8-8" fill="none" stroke="#315efb" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <b>3. Download your PDF</b><span>Click Convert to PDF and your file is saved instantly.</span>
+      </div>
+    </div>
 
     <h2>How to Convert Images to PDF Online</h2>
     <ol>
@@ -278,16 +251,37 @@
     </ol>
 
     <h2>Convert JPG to PDF</h2>
-    <p>Need to convert JPG images to PDF? Select one or multiple JPG or JPEG files and turn them into a PDF document. This is useful for photos, scanned documents, receipts, screenshots and pictures that you want to share or print as one file.</p>
+    <p>Need to convert JPG images to PDF? Select one or multiple JPG or JPEG files and turn them into a PDF document. This is useful for photos, scanned documents, receipts, screenshots and pictures that you want to share or print as one file. See our full <a href="/jpg-to-pdf">JPG to PDF guide</a>.</p>
 
     <h2>Convert PNG to PDF</h2>
-    <p>Our online PNG to PDF converter allows you to turn PNG images into PDF pages. Add several PNG files, arrange them in the order you want and combine them into one downloadable PDF file.</p>
+    <p>Our online PNG to PDF converter allows you to turn PNG images into PDF pages. Add several PNG files, arrange them in the order you want and combine them into one downloadable PDF file. See our full <a href="/png-to-pdf">PNG to PDF guide</a>.</p>
 
     <h2>Convert WEBP to PDF</h2>
     <p>Have WEBP images that you need in PDF format? You can select WEBP files directly and convert them to PDF without installing an additional application. Combine multiple WEBP pictures into one PDF document.</p>
 
     <h2>Combine Multiple Images into One PDF</h2>
     <p>If you have several images and want to put them into one document, you can combine multiple JPG, PNG and WEBP files into a single PDF. Each image becomes a separate PDF page. You can also change the image order before converting, making it easier to create organised documents, photo collections and scanned paperwork.</p>
+
+    <h2>Common Uses for Image to PDF Conversion</h2>
+    <ul>
+      <li><b>School and university:</b> Combine photos of handwritten homework, notes or lab results into one file to submit online.</li>
+      <li><b>Job applications:</b> Turn photos of certificates, diplomas and ID pages into a single document for an application portal.</li>
+      <li><b>Receipts and invoices:</b> Merge several receipt photos into one PDF for expense reports or accounting.</li>
+      <li><b>Contracts and forms:</b> Convert photographed signed pages into a PDF you can email.</li>
+      <li><b>Photo collections:</b> Put a set of pictures in a fixed order so they open the same way on every device.</li>
+      <li><b>Screenshots:</b> Save chat records, bank confirmations or instructions as one tidy document.</li>
+    </ul>
+
+    <h2>JPG vs PNG vs WEBP: Which Should You Use?</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Format</th><th>Best for</th><th>Notes</th></tr>
+        <tr><td>JPG / JPEG</td><td>Photos and scans</td><td>Small files, slight quality loss. The default format of most phone cameras.</td></tr>
+        <tr><td>PNG</td><td>Screenshots, text and graphics</td><td>Sharp edges and text, larger file size. Supports transparency.</td></tr>
+        <tr><td>WEBP</td><td>Web images</td><td>Small files with good quality. Common when saving pictures from websites.</td></tr>
+      </table>
+    </div>
+    <p>All three formats work in this converter, so you can even mix them in one PDF.</p>
 
     <h2>Why Use Our Free PDF Converter?</h2>
     <ul>
@@ -323,6 +317,22 @@
       <li>Check the upload size limit of the website where you plan to submit your PDF.</li>
     </ul>
 
+    <h2>Troubleshooting</h2>
+    <h3>The PDF does not download</h3>
+    <p>Check that your browser allows downloads from this site and that you have enough free storage. On iPhone, the file appears in the Files app or the Safari downloads list.</p>
+    <h3>My image was not added</h3>
+    <p>Only JPG, PNG and WEBP images are accepted, and up to 30 images at a time. Other formats such as HEIC should be exported as JPG first.</p>
+    <h3>The conversion is slow or fails</h3>
+    <p>Very large photos use a lot of memory. Try converting fewer images at once, or reduce the photo size before adding it.</p>
+
+    <h2>Guides and Tutorials</h2>
+    <div class="guides">
+      <a class="guide" href="/how-to-convert-photos-to-pdf-on-iphone"><b>Photos to PDF on iPhone</b><span>Step-by-step guide for Safari and Chrome on iOS.</span></a>
+      <a class="guide" href="/how-to-combine-multiple-photos-into-one-pdf"><b>Combine photos into one PDF</b><span>Order pages correctly and avoid common mistakes.</span></a>
+      <a class="guide" href="/jpg-vs-png-for-pdf"><b>JPG vs PNG for PDF</b><span>Which format gives the best result for your files.</span></a>
+    </div>
+    <p><a href="/blog">See all guides →</a></p>
+
     <h2>Other Image to PDF Tools</h2>
     <p>Looking for a specific image format converter? Use one of the options below.</p>
     <div class="tool-links">
@@ -344,13 +354,13 @@
     <h3>Can I convert WEBP images to PDF?</h3>
     <p>Yes. Select your WEBP images and convert them into a PDF document directly in your browser.</p>
 
-    <h3>Can I combine several images into one PDF?</h3>
+    <h3>Can I combine multiple images into one PDF?</h3>
     <p>Yes. Add multiple JPG, PNG and WEBP images, change their order and combine them into one PDF file, with one image per page.</p>
 
     <h3>Are my images uploaded to a server?</h3>
     <p>No. The conversion runs in your browser, so your images stay on your device and are not uploaded to our server.</p>
 
-    <h3>Does this PDF converter work on my phone?</h3>
+    <h3>Does the image to PDF converter work on mobile?</h3>
     <p>Yes. It works in modern mobile browsers on iPhone and Android, as well as on Windows, Mac and Linux computers.</p>
 
     <h3>Can I choose the PDF page size?</h3>
@@ -359,6 +369,10 @@
     <h3>Do I need to install software?</h3>
     <p>No. The image to PDF converter works directly in your browser. You do not need to download or install an additional application.</p>
 
+    <div class="about-box">
+      <p><b>About this tool:</b> Free Image to PDF Converter is an independent website that offers simple, free document tools. Learn more on our <a href="/about">About page</a>, or reach us any time through the <a href="/contact">Contact page</a>.</p>
+    </div>
+
   </article>
 </main>
 
@@ -366,6 +380,7 @@
   <div>
     <a href="/jpg-to-pdf">JPG to PDF</a> |
     <a href="/png-to-pdf">PNG to PDF</a> |
+    <a href="/blog">Blog</a> |
     <a href="/about">About Us</a> |
     <a href="/privacy-policy">Privacy Policy</a> |
     <a href="/contact">Contact Us</a> |
